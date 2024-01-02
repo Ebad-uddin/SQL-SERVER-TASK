@@ -1,0 +1,121 @@
+-- Employees Table
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    DepartmentID INT,
+    Salary DECIMAL(10, 2)
+);
+
+
+
+INSERT INTO Employees (EmployeeID, FirstName, LastName, DepartmentID, Salary)
+VALUES
+    (1, 'John', 'Doe', 1, 60000.00),
+    (2, 'Jane', 'Smith', 2, 55000.00),
+    (3, 'Mike', 'Johnson', 1, 65000.00),
+    (4, 'Emily', 'Williams', 3, 70000.00),
+    (5, 'David', 'Brown', 2, 50000.00),
+    (6, 'Sarah', 'Miller', 1, 62000.00),
+    (7, 'Chris', 'Wilson', 3, 75000.00),
+    (8, 'Anna', 'Jones', 2, 53000.00),
+    (9, 'Brian', 'Taylor', 1, 58000.00),
+    (10, 'Laura', 'Anderson', 3, 72000.00);
+
+
+-- Departments Table
+CREATE TABLE Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(50)
+);
+
+
+INSERT INTO Departments (DepartmentID, DepartmentName)
+VALUES
+    (1, 'HR'),
+    (2, 'IT'),
+    (3, 'Finance');
+
+
+Instructions:
+
+1. Create a new table named Projects with columns ProjectID, ProjectName, and StartDate.
+
+2. Insert five employees into the Employees table.
+
+3. Insert three departments into the Departments table.
+
+4. Assign each employee to a department in the Employees table.
+
+5. Retrieve the details of employees whose salary is above 50000.
+
+6. Fetch a list of all employees along with the department they belong to.
+
+7. Retrieve the employees whose last name starts with 'S'.
+
+8. Retrieve the projects with names containing the word 'Database'.
+
+9. Calculate the total salary of all employees.
+
+10.Find the department with the highest average salary.
+
+
+		-----	Another schema	-----	
+
+-- Students Table
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    GPA DECIMAL(3, 2)
+);
+
+INSERT INTO Students (StudentID, FirstName, LastName, Age, GPA)
+VALUES
+    (1, 'Alice', 'Johnson', 20, 3.75),
+    (2, 'Bob', 'Smith', 22, 3.50),
+    (3, 'Charlie', 'Davis', 21, 3.80),
+    (4, 'Diana', 'Brown', 23, 3.90),
+    (5, 'Eva', 'Miller', 20, 3.65),
+    (6, 'Frank', 'Jones', 22, 3.70),
+    (7, 'Grace', 'Wilson', 21, 3.85),
+    (8, 'Henry', 'Anderson', 23, 3.95),
+    (9, 'Ivy', 'Taylor', 20, 3.60),
+    (10, 'Jack', 'Clark', 22, 3.75);
+
+-- Courses Table
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(50)
+);
+
+-- Inserting 10 sample records into Courses table
+INSERT INTO Courses (CourseID, CourseName)
+VALUES
+    (1, 'Introduction to Programming'),
+    (2, 'Web Development Basics'),
+    (3, 'Database Management'),
+    (4, 'Data Structures and Algorithms'),
+    (5, 'JavaScript Fundamentals'),
+    (6, 'Mobile App Development'),
+    (7, 'Software Engineering Principles'),
+    (8, 'Networking Essentials'),
+    (9, 'Artificial Intelligence Basics'),
+    (10, 'Cybersecurity Fundamentals');
+
+
+Task:
+
+Retrieve a list of all students and the courses they are enrolled in, including those who are not enrolled in any course.
+Display the details of students who are enrolled in the course 'Web Development Basics'.
+Find out which courses have no enrolled students.
+
+4. List the students who are enrolled in any course, along with the course names.
+
+5. Retrieve a list of all courses along with the number of students enrolled in each course, even if the count is zero.
+
+
+
+
+
